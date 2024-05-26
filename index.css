@@ -1,0 +1,75 @@
+*,*::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: figtree ;
+    font-weight: 800;
+    src: url('assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: figtree ;
+    font-weight: 500;
+    src: url('assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+}
+
+:root{
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+}
+
+body{
+    font-family: 'figtree','roboto';
+   background-color: var(--Yellow);
+}
+.main{
+   display: grid;
+   place-items: center;
+   padding: 0 1rem;
+   margin-bottom: 2rem;
+}
+.card{
+   background-color: var(--White);
+   padding: 1rem 2rem;
+   border-radius: 1rem;
+   margin-top: 5rem;
+   box-shadow: 1rem 1rem;
+}
+h4{
+    background-color: var(--Yellow);
+    border-radius: 1rem;
+    padding: 1rem 0;
+    max-width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    max-width: 25rem;
+    border-radius: .9rem;
+}
+.margin{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.profile-id{
+    display: flex;  
+    gap:10px;
+}
+.text-color,
+.text{
+    font-size: large;
+    line-height: 29px;
+    color: var(--Grey);
+}
+.profile-img{
+    width:45px;
+}
+.fw-500{
+    font-weight: 800;
+}
